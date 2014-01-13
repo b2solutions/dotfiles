@@ -63,6 +63,7 @@ mkdir ~/dotfiles
 git config --global user.name "Your Name"
 git config --global user.email your.email@example.com
 git config --global credential.helper cache
+git config --global core.excludesfile ~/.gitignore_global
 
 # install vundle
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
