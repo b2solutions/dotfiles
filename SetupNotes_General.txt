@@ -1,5 +1,5 @@
 # -------------------------------------------------  Control Panel
-
+e
 
 # -------------------------------------------------  Server
 
@@ -19,7 +19,8 @@ vim /etc/ssh/sshd_config	# change value of PermitRootLogin to no
 /etc/init.d/ssh reload   # alternate: reload ssh
 
 # update the system
-sudo locale-gen en_US.UTF-8
+sudo locale-gen en_US en_US.UTF-8
+dpkg-reconfigure locales 
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
@@ -51,6 +52,9 @@ rvm requirements
 # install ruby 2.0
 rvm install 2.0.0
 
+# may need to upgrade to newest ruby
+rvm upgrade 2.0.0 2.#.#
+
 # set default ruby
 rvm --default use 2.0
 
@@ -65,8 +69,9 @@ git config --global user.email your.email@example.com
 git config --global credential.helper cache
 git config --global core.excludesfile ~/.gitignore_global
 
-# install vundle
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git config --global core.autocrlf input
+git config --global core.safecrlf true
+
 
 # -------------------------------------------------- Rails
 
@@ -94,3 +99,11 @@ sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 # -------------------------------------------------- Vim
 
 
+# Install Tmux
+sudo apt-get install tmux
+
+# install vim with ruby support
+sudo apt-get install vim-nox
+
+# install vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
