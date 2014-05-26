@@ -114,3 +114,5 @@ if ! shopt -oq posix; then
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/bin/python # Add Python to PATH
+
