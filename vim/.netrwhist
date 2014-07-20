@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/brian/Projects/javascript_tut'
+let g:netrw_dirhist_2='/Users/brian/dotfiles'
+let g:netrw_dirhist_3='/Users/brian'
+let g:netrw_dirhist_4='/Users/brian/Projects'
+let g:netrw_dirhist_5='/Users/brian/Projects/javascript_tut'
+let g:netrw_dirhist_6='/Users/brian/dotfiles'
